@@ -7,27 +7,51 @@
 
 import UIKit
 
-class SessionListViewController: UIViewController {
+class SessionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    let tableView = UITableView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Session List"
+        title = "Sessions"
+
+        //Set-up Table for Sessions Quick Look
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.frame = view.bounds
+        tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        let button = UIButton(type: .system)
-        button.setTitle("Open Session Details", for: .normal)
-        button.addTarget(self, action: #selector(openDetails), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(button)
-        
-        NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+        view.addSubview(tableView)
+    }
+
+    //Overriding so table updates when new session added.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+
+    //Grabbing the Data
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return SessionStore.shared.sessions.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        let session = SessionStore.shared.sessions[indexPath.row]
+
+        cell.textLabel?.text = session.topic
+        cell.detailTextLabel?.text = session.time
+
+        return cell
     }
     
-    @objc func openDetails() {
-        navigationController?.pushViewController(SessionDetailsViewController(), animated: true)
+    //Navigating to the Session Details of a particular session.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVC = SessionDetailsViewController()
+        detailsVC.sessionIndex = indexPath.row
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
     
 }

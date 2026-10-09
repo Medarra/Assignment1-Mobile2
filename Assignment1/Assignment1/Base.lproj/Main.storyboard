@@ -141,90 +141,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-qA-Dal">
-                                <rect key="frame" x="8" y="202.66666666666663" width="160.33333333333334" height="141.33333333333337"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9I-mA-yqH">
-                                        <rect key="frame" x="0.0" y="0.0" width="160.33333333333334" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqu-Ir-kmQ">
-                                        <rect key="frame" x="0.0" y="40.333333333333343" width="160.33333333333334" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyf-o4-vnN">
-                                        <rect key="frame" x="0.0" y="80.666666666666657" width="160.33333333333334" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Study Group:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJh-Xa-WLo">
-                                        <rect key="frame" x="0.0" y="121.00000000000001" width="160.33333333333334" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zez-7d-eMw">
-                                <rect key="frame" x="50" y="527" width="293" height="191"/>
+                                <rect key="frame" x="50" y="683.66666666666663" width="293" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save Session" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="saveSession:" destination="pAg-X0-RCh" eventType="touchUpInside" id="kvR-4u-XsH"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-9d-Ttc">
-                                <rect key="frame" x="193" y="202" width="200" height="152"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-HS-2BV">
+                                <rect key="frame" x="16.333333333333343" y="335" width="360.33333333333326" height="182"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Topic of Study (eg. Math)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cem-Sw-bbZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-qA-Dal">
+                                        <rect key="frame" x="0.0" y="0.0" width="160.33333333333334" height="182"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9I-mA-yqH">
+                                                <rect key="frame" x="0.0" y="0.0" width="160.33333333333334" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqu-Ir-kmQ">
+                                                <rect key="frame" x="0.0" y="81" width="160.33333333333334" height="20.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20.333333333333329" id="7Hc-qE-1hw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyf-o4-vnN">
+                                                <rect key="frame" x="0.0" y="121.3333333333333" width="160.33333333333334" height="20.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20.333333333333329" id="9xa-eG-R71"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Study Group:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJh-Xa-WLo">
+                                                <rect key="frame" x="0.0" y="161.66666666666669" width="160.33333333333334" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="5Yq-p9-zjn"/>
+                                            <constraint firstItem="Hqu-Ir-kmQ" firstAttribute="centerY" secondItem="pEX-qA-Dal" secondAttribute="centerY" id="TK4-TJ-GCM"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(eg. 3pm)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HF-2N-pND">
-                                        <rect key="frame" x="0.0" y="34" width="200" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="2HH-Id-IaI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Study Group Members (Separate with Comma)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-p3-nXr">
-                                        <rect key="frame" x="0.0" y="68" width="200" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="nP6-Wp-avL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-qr-GXn">
-                                        <rect key="frame" x="0.0" y="102" width="200" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="Hk9-zV-cxH"/>
-                                        </constraints>
-                                    </datePicker>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-9d-Ttc">
+                                        <rect key="frame" x="160.33333333333331" y="0.0" width="200" height="182"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Topic of Study (eg. Math)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cem-Sw-bbZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="5Yq-p9-zjn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(eg. 3pm)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HF-2N-pND">
+                                                <rect key="frame" x="0.0" y="44" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="2HH-Id-IaI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Study Group Members (Separate with Comma)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-p3-nXr">
+                                                <rect key="frame" x="0.0" y="88" width="200" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="nP6-Wp-avL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-qr-GXn">
+                                                <rect key="frame" x="0.0" y="132" width="200" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Hk9-zV-cxH"/>
+                                                </constraints>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dQB-Ro-cTQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fXU-9d-Ttc" firstAttribute="leading" secondItem="pEX-qA-Dal" secondAttribute="trailing" constant="24.666666666666657" id="9Hy-AK-AjN"/>
-                            <constraint firstItem="fXU-9d-Ttc" firstAttribute="centerY" secondItem="pEX-qA-Dal" secondAttribute="centerY" constant="4.6666666666666856" id="9z8-rt-Qqu"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="top" secondItem="dQB-Ro-cTQ" secondAttribute="top" constant="232" id="2pf-qZ-ci7"/>
                             <constraint firstItem="dQB-Ro-cTQ" firstAttribute="bottom" secondItem="Zez-7d-eMw" secondAttribute="bottom" constant="100" id="MqW-pX-MUV"/>
                             <constraint firstItem="Zez-7d-eMw" firstAttribute="leading" secondItem="dQB-Ro-cTQ" secondAttribute="leading" constant="50" id="OE4-MW-1rQ"/>
-                            <constraint firstItem="fXU-9d-Ttc" firstAttribute="top" secondItem="dQB-Ro-cTQ" secondAttribute="top" constant="99" id="RFR-es-dJs"/>
-                            <constraint firstItem="Zez-7d-eMw" firstAttribute="top" secondItem="fXU-9d-Ttc" secondAttribute="bottom" constant="173" id="Thf-Gg-JQM"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerX" secondItem="vET-Ea-05v" secondAttribute="centerX" id="YKD-yr-cjx"/>
                             <constraint firstItem="dQB-Ro-cTQ" firstAttribute="trailing" secondItem="Zez-7d-eMw" secondAttribute="trailing" constant="50" id="eXu-M6-JZD"/>
-                            <constraint firstItem="fXU-9d-Ttc" firstAttribute="trailing" secondItem="dQB-Ro-cTQ" secondAttribute="trailing" id="gBu-ta-7b5"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerY" secondItem="vET-Ea-05v" secondAttribute="centerY" id="pgj-oG-abB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cib-1j-jRY"/>
+                    <connections>
+                        <outlet property="datePicker" destination="TqQ-qr-GXn" id="nF0-fS-lXl"/>
+                        <outlet property="membersField" destination="0YO-p3-nXr" id="UmN-zQ-Ubk"/>
+                        <outlet property="timeField" destination="2HF-2N-pND" id="RHr-1M-L0T"/>
+                        <outlet property="topicField" destination="Cem-Sw-bbZ" id="rPW-4f-xF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31Q-Ox-3EF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

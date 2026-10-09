@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var stack : UIStackView!
     @IBOutlet var listButton : UIButton!
-    //@IBOutlet var addButton : UIButton!
+    @IBOutlet var addButton : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

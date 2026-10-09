@@ -9,16 +9,13 @@ import UIKit
 
 class AddSessionViewController: UIViewController {
 
-    let topicField = UITextField()
-    let timeField = UITextField()
-    let membersField = UITextField()
-    let datePicker = UIDatePicker()
-
+    @IBOutlet var topicField: UITextField!
+    @IBOutlet var timeField: UITextField!
+    @IBOutlet var membersField: UITextField!
+    @IBOutlet var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-
-    @objc func saveSession() {
+        title = "Add Session"
     }
 }

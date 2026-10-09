@@ -10,13 +10,13 @@ import Foundation
 class SessionStore {
     static let shared = SessionStore()
     
-    private(set) var sessions = [StudySession] = []
+    private(set) var sessions : [StudySession] = []
     
-    fun addSession(_ session: StudySession) {
+    func addSession(_ session: StudySession) {
         sessions.append(session)
     }
     
-    func session(at Index: Int) -> StudySession {
+    func session(at index: Int) -> StudySession {
         return sessions[index]
     }
 }

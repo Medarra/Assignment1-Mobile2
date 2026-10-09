@@ -12,22 +12,21 @@
         <!--Home View Controller-->
         <scene sceneID="ZWx-G8-TbH">
             <objects>
-                <viewController id="EdD-KB-8md" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="EdD-KB-8md" customClass="HomeViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yOk-oQ-uC7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-yC-AML">
-                                <rect key="frame" x="50" y="391.66666666666663" width="293" height="83.666666666666686"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-yC-AML">
+                                <rect key="frame" x="50" y="391.66666666666669" width="293" height="83.666666666666686"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnH-tQ-cyC">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-uN-9Dn">
                                         <rect key="frame" x="0.0" y="0.0" width="293" height="34.333333333333336"/>
-                                        <accessibility key="accessibilityConfiguration" label="List Sessions"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="List Sessions"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLa-2s-5qk">
-                                        <rect key="frame" x="0.0" y="49.333333333333329" width="293" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="49.333333333333314" width="293" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Session"/>
                                     </button>
@@ -45,25 +44,25 @@
                         <constraints>
                             <constraint firstItem="lpj-NE-bg3" firstAttribute="trailing" secondItem="wPm-yC-AML" secondAttribute="trailing" constant="50" id="1lw-V5-eNG"/>
                             <constraint firstItem="OmC-is-i5D" firstAttribute="top" secondItem="lpj-NE-bg3" secondAttribute="top" constant="50" id="NzN-V3-mni"/>
+                            <constraint firstItem="lpj-NE-bg3" firstAttribute="bottom" secondItem="wPm-yC-AML" secondAttribute="bottom" constant="342.66666666666669" id="UQb-kP-XuY"/>
                             <constraint firstItem="wPm-yC-AML" firstAttribute="leading" secondItem="lpj-NE-bg3" secondAttribute="leading" constant="50" id="amm-Co-Eo6"/>
                             <constraint firstItem="OmC-is-i5D" firstAttribute="centerX" secondItem="yOk-oQ-uC7" secondAttribute="centerX" id="mnJ-e3-uTN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qjj-yv-z95"/>
                     <connections>
-                        <outlet property="addButton" destination="jLa-2s-5qk" id="VpE-dC-Gku"/>
-                        <outlet property="listButton" destination="ZnH-tQ-cyC" id="VOS-TB-Fou"/>
+                        <outlet property="listButton" destination="bAi-uN-9Dn" id="duq-yC-RVY"/>
                         <outlet property="stack" destination="wPm-yC-AML" id="0fq-Gk-SkP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSt-09-853" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551.9083969465646" y="-69.014084507042256"/>
+            <point key="canvasLocation" x="2553" y="-68"/>
         </scene>
-        <!--View Controller-->
+        <!--Session List View Controller-->
         <scene sceneID="j76-QH-1ga">
             <objects>
-                <viewController id="Gui-6V-e0j" sceneMemberID="viewController">
+                <viewController id="Gui-6V-e0j" customClass="SessionListViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rA1-Ac-nH7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,21 +8,13 @@
 import UIKit
 
 class SessionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    let tableView = UITableView()
+    
+    @IBOutlet var tableView : UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Sessions"
-
-        //Set-up Table for Sessions Quick Look
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.frame = view.bounds
-        tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
-        view.addSubview(tableView)
     }
 
     //Overriding so table updates when new session added.
@@ -52,6 +44,10 @@ class SessionListViewController: UIViewController, UITableViewDataSource, UITabl
         let detailsVC = SessionDetailsViewController()
         detailsVC.sessionIndex = indexPath.row
         navigationController?.pushViewController(detailsVC, animated: true)
+    }
+    
+    func navBack(){
+        
     }
     
 }

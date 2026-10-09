@@ -17,10 +17,10 @@
 		3F7C3D7B30753090009978B5 /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C3D7A30753090009978B5 /* Assignment1UITests.swift */; };
 		3F7C3D7D30753090009978B5 /* Assignment1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C3D7C30753090009978B5 /* Assignment1UITestsLaunchTests.swift */; };
 		3F7C3D9230793269009978B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7C3D5F30753089009978B5 /* Main.storyboard */; };
-		3F91197B3079900500794D4E /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9119773079900400794D4E /* AddSessionViewController.swift */; };
-		3F91197C3079900500794D4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9119783079900500794D4E /* HomeViewController.swift */; };
-		3F91197D3079900500794D4E /* SessionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9119793079900500794D4E /* SessionDetailsViewController.swift */; };
-		3F91197E3079900500794D4E /* SessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91197A3079900500794D4E /* SessionListViewController.swift */; };
+		3F9119833079966A00794D4E /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91197F3079966900794D4E /* AddSessionViewController.swift */; };
+		3F9119843079966A00794D4E /* SessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9119803079966A00794D4E /* SessionListViewController.swift */; };
+		3F9119853079966A00794D4E /* SessionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9119813079966A00794D4E /* SessionDetailsViewController.swift */; };
+		3F9119863079966A00794D4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9119823079966A00794D4E /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		3F7C3D7630753090009978B5 /* Assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7C3D7A30753090009978B5 /* Assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITests.swift; sourceTree = "<group>"; };
 		3F7C3D7C30753090009978B5 /* Assignment1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3F9119773079900400794D4E /* AddSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddSessionViewController.swift; path = ../../../Desktop/ViewControllers/AddSessionViewController.swift; sourceTree = "<group>"; };
-		3F9119783079900500794D4E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../Desktop/ViewControllers/HomeViewController.swift; sourceTree = "<group>"; };
-		3F9119793079900500794D4E /* SessionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionDetailsViewController.swift; path = ../../../Desktop/ViewControllers/SessionDetailsViewController.swift; sourceTree = "<group>"; };
-		3F91197A3079900500794D4E /* SessionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionListViewController.swift; path = ../../../Desktop/ViewControllers/SessionListViewController.swift; sourceTree = "<group>"; };
+		3F91197F3079966900794D4E /* AddSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
+		3F9119803079966A00794D4E /* SessionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListViewController.swift; sourceTree = "<group>"; };
+		3F9119813079966A00794D4E /* SessionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailsViewController.swift; sourceTree = "<group>"; };
+		3F9119823079966A00794D4E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +109,10 @@
 		3F7C3D5830753089009978B5 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
-				3F9119773079900400794D4E /* AddSessionViewController.swift */,
-				3F9119783079900500794D4E /* HomeViewController.swift */,
-				3F9119793079900500794D4E /* SessionDetailsViewController.swift */,
-				3F91197A3079900500794D4E /* SessionListViewController.swift */,
+				3F9119823079966A00794D4E /* HomeViewController.swift */,
+				3F9119813079966A00794D4E /* SessionDetailsViewController.swift */,
+				3F91197F3079966900794D4E /* AddSessionViewController.swift */,
+				3F9119803079966A00794D4E /* SessionListViewController.swift */,
 				3F55403130798B11007431D3 /* StudySession.swift */,
 				3F7C3D5930753089009978B5 /* AppDelegate.swift */,
 				3F7C3D5B30753089009978B5 /* SceneDelegate.swift */,
@@ -274,13 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7C3D5A30753089009978B5 /* AppDelegate.swift in Sources */,
-				3F91197E3079900500794D4E /* SessionListViewController.swift in Sources */,
-				3F91197B3079900500794D4E /* AddSessionViewController.swift in Sources */,
 				3F7C3D5C30753089009978B5 /* SceneDelegate.swift in Sources */,
 				3F55403230798B11007431D3 /* StudySession.swift in Sources */,
-				3F91197D3079900500794D4E /* SessionDetailsViewController.swift in Sources */,
+				3F9119843079966A00794D4E /* SessionListViewController.swift in Sources */,
 				3F554030307989F3007431D3 /* SessionStore.swift in Sources */,
-				3F91197C3079900500794D4E /* HomeViewController.swift in Sources */,
+				3F9119833079966A00794D4E /* AddSessionViewController.swift in Sources */,
+				3F9119853079966A00794D4E /* SessionDetailsViewController.swift in Sources */,
+				3F9119863079966A00794D4E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

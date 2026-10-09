@@ -24,6 +24,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="293" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="List Sessions"/>
+                                        <connections>
+                                            <segue destination="Gui-6V-e0j" kind="show" id="hLb-OU-OqB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLa-2s-5qk">
                                         <rect key="frame" x="0.0" y="49.333333333333314" width="293" height="34.333333333333343"/>

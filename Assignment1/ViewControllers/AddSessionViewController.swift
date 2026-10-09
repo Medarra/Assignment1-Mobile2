@@ -12,6 +12,7 @@ class AddSessionViewController: UIViewController {
     let topicField = UITextField()
     let timeField = UITextField()
     let membersField = UITextField()
+    let datePicker = UIDatePicker()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,11 @@ class AddSessionViewController: UIViewController {
         timeField.borderStyle = .roundedRect
         membersField.borderStyle = .roundedRect
 
+        datePicker.datePickerMode = .dateAndTime
+        datePicker.preferredDatePickerStyle = .compact
+
         // Stack Layout
-        let stack = UIStackView(arrangedSubViews: [topicField, timeField, members])
+        let stack = UIStackView(arrangedSubViews: [topicField, timeField, membersField, datePicker])
         stack.axis = .vertical
         stack.spacing = 20
         stacl.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +72,7 @@ class AddSessionViewController: UIViewController {
                     .map { $0.trimmingCharacters(in: .whitespaces) } ?? []
 
                 let session = StudySession(
-                    date: Date(),
+                    date: datePicker.date,
                     topic: topic,
                     time: time,
                     members: members

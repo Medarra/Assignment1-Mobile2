@@ -32,6 +32,9 @@
                                         <rect key="frame" x="0.0" y="49.333333333333314" width="293" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Session"/>
+                                        <connections>
+                                            <segue destination="pAg-X0-RCh" kind="show" id="T0b-dt-mAL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -104,6 +107,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiI-5E-6HS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1625.1908396946565" y="-69.014084507042256"/>
+        </scene>
+        <!--Add Session View Controller-->
+        <scene sceneID="Zbk-nL-SXx">
+            <objects>
+                <viewController id="pAg-X0-RCh" customClass="AddSessionViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vET-Ea-05v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dQB-Ro-cTQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cib-1j-jRY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31Q-Ox-3EF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3089" y="579"/>
         </scene>
     </scenes>
     <resources>

@@ -41,4 +41,5 @@ class HomeViewController: UIViewController {
     @objc func openAddSession() {
         navigationController?.pushViewController(AddSessionViewController(), animated: true)
     }
+    // First comment Kyle.
 }

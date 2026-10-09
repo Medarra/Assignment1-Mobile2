@@ -46,7 +46,7 @@ class SessionListViewController: UIViewController, UITableViewDataSource, UITabl
         let selectedSession = SessionStore.shared.session(at: indexPath.row)
         
         
-        let detailsVC = storyboard!.instantiateViewController(withIdentifier: "DetailViewController") as! SessionDetailsViewController
+        let detailsVC = storyboard!.instantiateViewController(withIdentifier: "SessionDetailsViewController") as! SessionDetailsViewController
         
         detailsVC.sessionIndex = indexPath.row
         navigationController?.pushViewController(detailsVC, animated: true)

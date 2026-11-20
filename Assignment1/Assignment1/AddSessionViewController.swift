@@ -49,7 +49,11 @@ class AddSessionViewController: UIViewController {
                 message: NSLocalizedString("fill_fields", comment: ""),
                 preferredStyle: .alert
             )
-            alert.addAction(UIAlertAction(title:"OK", style: .default))
+            //alert.addAction(UIAlertAction(title:"OK", style: .default))
+            alert.addAction(UIAlertAction(
+                title: NSLocalizedString("ok", comment: "Alert confirmation button"),
+                style: .default
+            ))
             present(alert, animated: true)
             return
         }

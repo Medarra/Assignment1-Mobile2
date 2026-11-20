@@ -10,11 +10,14 @@ import UIKit
 class SessionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView : UITableView!
+    @IBOutlet var tableLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        tableLabel.text = NSLocalizedString("study_sessions", comment: "")
     }
 
     //Overriding so table updates when new session added.

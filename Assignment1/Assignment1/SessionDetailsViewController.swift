@@ -11,13 +11,19 @@ class SessionDetailsViewController: UIViewController {
 
     var sessionIndex: Int?
     @IBOutlet var tableView : UITableView!
+    @IBOutlet var detailsLabel: UILabel!
     @IBOutlet var topicLabel : UILabel!
     @IBOutlet var timeLabel : UILabel!
     @IBOutlet var dateLabel : UILabel!
     @IBOutlet var memberLabel : UILabel!
+    @IBOutlet var topicTitle : UILabel!
+    @IBOutlet var timeTitle : UILabel!
+    @IBOutlet var dateTitle : UILabel!
+    @IBOutlet var memberTitle : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         // Store received value from list view
         let index = sessionIndex
@@ -25,6 +31,12 @@ class SessionDetailsViewController: UIViewController {
         if index == nil {
             return
         }
+        
+        detailsLabel.text = NSLocalizedString("study_sessions_details", comment: "")
+        topicTitle.text = NSLocalizedString("study_topic", comment: "")
+        timeTitle.text = NSLocalizedString("study_time", comment: "")
+        dateTitle.text = NSLocalizedString("study_date", comment: "")
+        memberTitle.text = NSLocalizedString("study_members", comment: "")
         
         // Call SessionStore's session function at the received index
         let session = SessionStore.shared.session(at: index!)

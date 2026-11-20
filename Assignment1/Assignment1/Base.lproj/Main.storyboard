@@ -110,6 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="knT-Bl-tsH"/>
                     <connections>
+                        <outlet property="tableLabel" destination="oeY-26-HWt" id="zXt-vD-wSH"/>
                         <outlet property="tableView" destination="YK9-oW-R4g" id="ChS-wd-LQV"/>
                     </connections>
                 </viewController>
@@ -152,7 +153,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9Y-yh-ewX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Members:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9Y-yh-ewX">
                                         <rect key="frame" x="0.0" y="148.66666666666669" width="144.33333333333334" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -164,9 +165,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Members:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-q8-LuE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-q8-LuE">
                                         <rect key="frame" x="0.0" y="223" width="144.33333333333334" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -195,9 +196,14 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="0U7-3c-ru5" id="bMf-tC-4he"/>
+                        <outlet property="dateTitle" destination="D9Y-yh-ewX" id="5Ec-QW-ghV"/>
+                        <outlet property="detailsLabel" destination="Tlh-vg-Tuj" id="X0U-12-YqR"/>
                         <outlet property="memberLabel" destination="fJd-nm-sFz" id="flf-6R-wxE"/>
+                        <outlet property="memberTitle" destination="JlD-q8-LuE" id="h2g-nI-nAf"/>
                         <outlet property="timeLabel" destination="oVY-ff-eQC" id="YOv-cG-ZfZ"/>
+                        <outlet property="timeTitle" destination="p2J-oZ-y7U" id="2nx-PV-Q9d"/>
                         <outlet property="topicLabel" destination="3cS-DN-EhB" id="lzc-dN-hJb"/>
+                        <outlet property="topicTitle" destination="Rvt-NX-JKU" id="i9d-nV-iEt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRy-wx-4DW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -238,45 +244,45 @@
                                     <action selector="saveSession:" destination="pAg-X0-RCh" eventType="touchUpInside" id="kvR-4u-XsH"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-HS-2BV">
-                                <rect key="frame" x="16.333333333333343" y="335" width="360.33333333333326" height="182"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-HS-2BV">
+                                <rect key="frame" x="16.333333333333371" y="335" width="360.33333333333326" height="182"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-qA-Dal">
                                         <rect key="frame" x="0.0" y="0.0" width="160.33333333333334" height="182"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9I-mA-yqH">
                                                 <rect key="frame" x="0.0" y="0.0" width="160.33333333333334" height="61"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqu-Ir-kmQ">
-                                                <rect key="frame" x="0.0" y="81" width="160.33333333333334" height="20.333333333333329"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20.333333333333329" id="7Hc-qE-1hw"/>
+                                                    <constraint firstAttribute="height" constant="61" id="OAT-jR-eOr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqu-Ir-kmQ">
+                                                <rect key="frame" x="0.0" y="81" width="160.33333333333334" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyf-o4-vnN">
-                                                <rect key="frame" x="0.0" y="121.3333333333333" width="160.33333333333334" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="120.99999999999999" width="160.33333333333334" height="20.333333333333329"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20.333333333333329" id="9xa-eG-R71"/>
+                                                    <constraint firstAttribute="height" constant="20.333333333333329" id="0bR-yi-N6c"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Study Group:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJh-Xa-WLo">
-                                                <rect key="frame" x="0.0" y="161.66666666666669" width="160.33333333333334" height="20.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="161.33333333333331" width="160.33333333333334" height="20.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Hqu-Ir-kmQ" firstAttribute="centerY" secondItem="pEX-qA-Dal" secondAttribute="centerY" id="TK4-TJ-GCM"/>
+                                            <constraint firstItem="Hqu-Ir-kmQ" firstAttribute="centerY" secondItem="pEX-qA-Dal" secondAttribute="centerY" id="cOa-5P-NfS"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-9d-Ttc">
@@ -284,49 +290,41 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Topic of Study (eg. Math)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cem-Sw-bbZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="5Yq-p9-zjn"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(eg. 3pm)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HF-2N-pND">
                                                 <rect key="frame" x="0.0" y="44" width="200" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="2HH-Id-IaI"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Study Group Members (Separate with Comma)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-p3-nXr">
                                                 <rect key="frame" x="0.0" y="88" width="200" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="nP6-Wp-avL"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="TqQ-qr-GXn">
                                                 <rect key="frame" x="0.0" y="132" width="200" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="Hk9-zV-cxH"/>
-                                                </constraints>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="fXU-9d-Ttc" firstAttribute="leading" secondItem="6nk-HS-2BV" secondAttribute="leading" constant="160.33333333333331" id="UOz-xd-KPH"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dQB-Ro-cTQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="6nk-HS-2BV" firstAttribute="top" secondItem="dQB-Ro-cTQ" secondAttribute="top" constant="232" id="2pf-qZ-ci7"/>
-                            <constraint firstItem="dQB-Ro-cTQ" firstAttribute="bottom" secondItem="Zez-7d-eMw" secondAttribute="bottom" constant="100" id="MqW-pX-MUV"/>
-                            <constraint firstItem="Zez-7d-eMw" firstAttribute="leading" secondItem="dQB-Ro-cTQ" secondAttribute="leading" constant="50" id="OE4-MW-1rQ"/>
-                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerX" secondItem="vET-Ea-05v" secondAttribute="centerX" id="YKD-yr-cjx"/>
-                            <constraint firstItem="dQB-Ro-cTQ" firstAttribute="trailing" secondItem="Zez-7d-eMw" secondAttribute="trailing" constant="50" id="eXu-M6-JZD"/>
-                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerY" secondItem="vET-Ea-05v" secondAttribute="centerY" id="pgj-oG-abB"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="leading" secondItem="dQB-Ro-cTQ" secondAttribute="leading" constant="16.333333333333343" id="5XX-wJ-SjS"/>
+                            <constraint firstItem="dQB-Ro-cTQ" firstAttribute="bottom" secondItem="Zez-7d-eMw" secondAttribute="bottom" constant="100.00000000000011" id="5b9-aS-KEo"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerX" secondItem="vET-Ea-05v" secondAttribute="centerX" id="Pwi-Ki-VTV"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerX" secondItem="Zez-7d-eMw" secondAttribute="centerX" id="SiR-gV-c3Y"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="centerY" secondItem="vET-Ea-05v" secondAttribute="centerY" id="Yq2-rH-ecq"/>
+                            <constraint firstItem="6nk-HS-2BV" firstAttribute="top" secondItem="dQB-Ro-cTQ" secondAttribute="top" constant="232" id="fNa-ik-TIW"/>
+                            <constraint firstItem="Zez-7d-eMw" firstAttribute="leading" secondItem="dQB-Ro-cTQ" secondAttribute="leading" constant="50" id="nzJ-SM-A40"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="JWz-b1-aKv" appends="YES" id="wQI-bR-R8m"/>
@@ -334,10 +332,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="cib-1j-jRY"/>
                     <connections>
+                        <outlet property="dateLabel" destination="mJh-Xa-WLo" id="Jcs-nW-nfI"/>
                         <outlet property="datePicker" destination="TqQ-qr-GXn" id="nF0-fS-lXl"/>
+                        <outlet property="memberLabel" destination="pyf-o4-vnN" id="GGK-AB-QES"/>
                         <outlet property="membersField" destination="0YO-p3-nXr" id="UmN-zQ-Ubk"/>
+                        <outlet property="saveButton" destination="Zez-7d-eMw" id="Ebm-p3-xdN"/>
                         <outlet property="timeField" destination="2HF-2N-pND" id="RHr-1M-L0T"/>
+                        <outlet property="timeLabel" destination="Hqu-Ir-kmQ" id="aql-iX-IUn"/>
                         <outlet property="topicField" destination="Cem-Sw-bbZ" id="rPW-4f-xF4"/>
+                        <outlet property="topicLabel" destination="N9I-mA-yqH" id="yGj-Av-GJU"/>
+                        <outlet property="view" destination="Zez-7d-eMw" id="XPJ-Oc-Bn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31Q-Ox-3EF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

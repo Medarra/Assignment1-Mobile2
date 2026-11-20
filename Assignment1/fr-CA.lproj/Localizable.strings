@@ -6,9 +6,26 @@
   
 */
 
-"add_session" = "Ajouter une session";
-"missing_info" = "Information manquante";
-"fill_fields" = "Veuillez Remplir le Sujet et L'heure";
-"list_sessions" = "Liste des Sessions";
-"save_session" = "Enregistrer";
-"study_group_organizer" = "Organisateur de Group D'etude";
+"add_session" = "Ajouter une séance";
+"missing_info" = "Informations manquantes";
+"fill_fields" = "Veuillez remplir le sujet et l'heure";
+"list_sessions" = "Liste des séances";
+"save_session" = "Enregistrer la séance";
+"study_group_organizer" = "Organisateur de groupes d'étude";
+
+"topic" = "Sujet:";
+"time" = "Heure:";
+"members" = "Membres:";
+"study_group_date" = "Date du groupe d'étude:";
+
+"topic_example" = "Sujet d'étude (ex. Mathématiques)";
+"time_example" = "(ex. 15 h)";
+"members_example" = "Membres du groupe d'étude (séparés par des virgules)";
+
+"study_sessions" = "Séances d'étude";
+
+"study_sessions_details" = "Détails de la séance d'étude";
+"study_topic" = "Sujet d'étude :";
+"study_time" = "Heure de la séance :";
+"study_date" = "Date de la séance :";
+"study_members" = "Participants :";

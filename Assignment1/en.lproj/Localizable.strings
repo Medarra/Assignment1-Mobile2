@@ -1,7 +1,31 @@
 /* 
   Localizable.strings
+  English
   Assignment1
 
   Created by Student on 2026-11-20.
   
 */
+
+
+"add_session" = "Add Session";
+"missing_info" = "Missing Info";
+"fill_fields" = "Please Fill in Topic and Time";
+"list_sessions" = "List Sessions";
+"save_session" = "Save Session";
+"study_group_organizer" = "Study Group Organizer";
+
+"topic" = "Topic";
+"time" = "Time";
+"members" = "Members";
+"study_group_date" = "Date of Study Group";
+
+"topic_example" = "Topic of Study (eg. Math)";
+"time_example" = "(eg. 3pm)";
+"members_example" = "Study Group Members (Separate with Comma)";
+
+"study_sessions_details" = "Study Session Details";
+"study_topic" = "Study Topic:";
+"study_time" = "Study Time:";
+"study_date" = "Study Date:";
+"study_members" = "Study Members:";

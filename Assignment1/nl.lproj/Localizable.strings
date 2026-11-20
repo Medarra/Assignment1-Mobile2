@@ -1,7 +1,15 @@
 /* 
   Localizable.strings
   Assignment1
-
+  Dutch
   Created by Student on 2026-11-20.
   
 */
+
+
+"add_session" = "Sessie Toevoegen";
+"missing_info" = "Ontbrekende Informatie";
+"fill_fields" = "Vul alstublieft het onderwerp en het tijdstip in";
+"list_sessions" = "Sessies Weergeven";
+"save_session" = "Sessie Opslaan";
+"study_group_organizer" = "Organisator van een Studiegroep";

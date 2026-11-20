@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q1N-eJ-Vb4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q1N-eJ-Vb4">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,8 +38,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Group Organizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmC-is-i5D">
-                                <rect key="frame" x="16.333333333333343" y="153" width="360.66666666666663" height="44.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Group Organizer" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmC-is-i5D">
+                                <rect key="frame" x="16.333333333333343" y="153" width="360.33333333333326" height="88.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,10 +49,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lpj-NE-bg3" firstAttribute="trailing" secondItem="wPm-yC-AML" secondAttribute="trailing" constant="50" id="1lw-V5-eNG"/>
-                            <constraint firstItem="OmC-is-i5D" firstAttribute="top" secondItem="lpj-NE-bg3" secondAttribute="top" constant="50" id="NzN-V3-mni"/>
+                            <constraint firstItem="OmC-is-i5D" firstAttribute="top" secondItem="lpj-NE-bg3" secondAttribute="top" constant="50" id="M1k-zl-n0Q"/>
                             <constraint firstItem="lpj-NE-bg3" firstAttribute="bottom" secondItem="wPm-yC-AML" secondAttribute="bottom" constant="342.66666666666669" id="UQb-kP-XuY"/>
                             <constraint firstItem="wPm-yC-AML" firstAttribute="leading" secondItem="lpj-NE-bg3" secondAttribute="leading" constant="50" id="amm-Co-Eo6"/>
-                            <constraint firstItem="OmC-is-i5D" firstAttribute="centerX" secondItem="yOk-oQ-uC7" secondAttribute="centerX" id="mnJ-e3-uTN"/>
+                            <constraint firstItem="OmC-is-i5D" firstAttribute="leading" secondItem="lpj-NE-bg3" secondAttribute="leading" constant="16.329999999999998" id="mX0-io-kE4"/>
+                            <constraint firstItem="lpj-NE-bg3" firstAttribute="trailing" secondItem="OmC-is-i5D" secondAttribute="trailing" constant="16.329999999999998" id="rCI-MO-NwS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qjj-yv-z95"/>
@@ -60,6 +61,7 @@
                         <outlet property="addButton" destination="jLa-2s-5qk" id="KND-M6-0K4"/>
                         <outlet property="listButton" destination="bAi-uN-9Dn" id="duq-yC-RVY"/>
                         <outlet property="stack" destination="wPm-yC-AML" id="0fq-Gk-SkP"/>
+                        <outlet property="titleLabel" destination="OmC-is-i5D" id="zEs-nT-rWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSt-09-853" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

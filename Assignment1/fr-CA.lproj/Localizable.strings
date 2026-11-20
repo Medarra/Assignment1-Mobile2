@@ -1,7 +1,14 @@
 /* 
   Localizable.strings
   Assignment1
-
+  French
   Created by Student on 2026-11-20.
   
 */
+
+"add_session" = "Ajouter une session";
+"missing_info" = "Information manquante";
+"fill_fields" = "Veuillez Remplir le Sujet et L'heure";
+"list_sessions" = "Liste des Sessions";
+"save_session" = "Enregistrer";
+"study_group_organizer" = "Organisateur de Group D'etude";

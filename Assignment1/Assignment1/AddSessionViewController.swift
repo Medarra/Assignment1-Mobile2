@@ -44,4 +44,9 @@ class AddSessionViewController: UIViewController {
         
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer){
+        view.endEditing(true)
+    }
+    
 }

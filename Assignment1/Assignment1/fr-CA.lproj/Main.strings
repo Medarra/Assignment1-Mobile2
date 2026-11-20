@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0U7-3c-ru5"; */
+"0U7-3c-ru5.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Study Group Members (Separate with Comma)"; ObjectID = "0YO-p3-nXr"; */
+"0YO-p3-nXr.placeholder" = "Study Group Members (Separate with Comma)";
+
+/* Class = "UITextField"; placeholder = "(eg. 3pm)"; ObjectID = "2HF-2N-pND"; */
+"2HF-2N-pND.placeholder" = "(eg. 3pm)";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3cS-DN-EhB"; */
+"3cS-DN-EhB.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Topic of Study (eg. Math)"; ObjectID = "Cem-Sw-bbZ"; */
+"Cem-Sw-bbZ.placeholder" = "Topic of Study (eg. Math)";
+
+/* Class = "UILabel"; text = "Study Date:"; ObjectID = "D9Y-yh-ewX"; */
+"D9Y-yh-ewX.text" = "Study Date:";
+
+/* Class = "UILabel"; text = "Time:"; ObjectID = "Hqu-Ir-kmQ"; */
+"Hqu-Ir-kmQ.text" = "Time:";
+
+/* Class = "UILabel"; text = "Study Members:"; ObjectID = "JlD-q8-LuE"; */
+"JlD-q8-LuE.text" = "Study Members:";
+
+/* Class = "UILabel"; text = "Topic:"; ObjectID = "N9I-mA-yqH"; */
+"N9I-mA-yqH.text" = "Topic:";
+
+/* Class = "UILabel"; text = "Study Group Organizer"; ObjectID = "OmC-is-i5D"; */
+"OmC-is-i5D.text" = "Study Group Organizer";
+
+/* Class = "UILabel"; text = "Study Topic:"; ObjectID = "Rvt-NX-JKU"; */
+"Rvt-NX-JKU.text" = "Study Topic:";
+
+/* Class = "UILabel"; text = "Study Session Details:"; ObjectID = "Tlh-vg-Tuj"; */
+"Tlh-vg-Tuj.text" = "Study Session Details:";
+
+/* Class = "UIButton"; configuration.title = "Save Session"; ObjectID = "Zez-7d-eMw"; */
+"Zez-7d-eMw.configuration.title" = "Save Session";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Zez-7d-eMw"; */
+"Zez-7d-eMw.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "List Sessions"; ObjectID = "bAi-uN-9Dn"; */
+"bAi-uN-9Dn.configuration.title" = "List Sessions";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bAi-uN-9Dn"; */
+"bAi-uN-9Dn.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fJd-nm-sFz"; */
+"fJd-nm-sFz.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Add Session"; ObjectID = "jLa-2s-5qk"; */
+"jLa-2s-5qk.configuration.title" = "Add Session";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jLa-2s-5qk"; */
+"jLa-2s-5qk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Date of Study Group:"; ObjectID = "mJh-Xa-WLo"; */
+"mJh-Xa-WLo.text" = "Date of Study Group:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oVY-ff-eQC"; */
+"oVY-ff-eQC.text" = "Label";
+
+/* Class = "UILabel"; text = "Study Sessions"; ObjectID = "oeY-26-HWt"; */
+"oeY-26-HWt.text" = "Study Sessions";
+
+/* Class = "UILabel"; text = "Study Time:"; ObjectID = "p2J-oZ-y7U"; */
+"p2J-oZ-y7U.text" = "Study Time:";
+
+/* Class = "UILabel"; text = "Members:"; ObjectID = "pyf-o4-vnN"; */
+"pyf-o4-vnN.text" = "Members:";

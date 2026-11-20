@@ -13,3 +13,20 @@
 "list_sessions" = "Sessies Weergeven";
 "save_session" = "Sessie Opslaan";
 "study_group_organizer" = "Organisator van een Studiegroep";
+
+"topic" = "Onderwerp:";
+"time" = "Tijd:";
+"members" = "Leden:";
+"study_group_date" = "Datum van studiesessie:";
+
+"topic_example" = "Onderwerp van de Studiesessie (bijv. Wiskunde)";
+"time_example" = "(bijv. 15:00)";
+"members_example" = "Deelnemers aan de Studiesessie (Scheiden met een komma)";
+
+"study_sessions" = "Studiesessies";
+
+"study_sessions_details" = "Details van de Studiesessie";
+"study_topic" = "Onderwerp voor de Studiesessie:";
+"study_time" = "Tijd voor de Studiesessie:";
+"study_date" = "Datum van de Studiesessie:";
+"study_members" = "Deelnemers aan de Studiesessie:";
